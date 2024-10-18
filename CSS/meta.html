@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .image-slider {
+  width: 100%;
+  height: 200px; /* Adjust height */
+}
+
+.image-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
+</style>
+<body>
+    <footer class="deve">
+        <h3 class="meet">Meet the Developer</h3>
+        <div class="image-slider">
+          <img class="img" src="/assets/Snapchat-248508878.jpg" alt="">
+        </div>
+      </footer>
+      
+      <script>
+        const images = [
+  "/assets/Snapchat-248508878.jpg",
+  "/assets/Snapchat-398784111.jpg",
+    "/assets/Snapchat-1603294518.jpg",
+];
+
+const imgElement = document.querySelector(".img");
+let currentIndex = 0;
+
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % images.length;
+  imgElement.src = images[currentIndex];
+}, 10000); // Change image every 10 seconds
+
+
+      </script>
+</body>
+</html>

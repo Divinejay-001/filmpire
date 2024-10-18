@@ -1,0 +1,33 @@
+.deve{
+   display:flex; 
+}
+.img{
+    /* position: absolute; */
+    width: 400px;
+    border-radius: 100%;
+    padding: 10px;
+    height: 400px;
+    margin-left: 150px;
+    object-fit: cover;
+
+}
+.meet{
+margin-left: 10px;
+font-size: 30px;
+}
+.m{
+    /* display: grid; */
+
+}
+.hi{
+    font-size: 20px;
+    max-width: 650px;
+margin-block: 20px;
+margin-left: 10px;
+
+}
+.social-media{
+    /* width: 50px; */
+    font-size: 30px;
+    margin-left: 300px;
+}
